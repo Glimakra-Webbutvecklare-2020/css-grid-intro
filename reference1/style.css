@@ -14,12 +14,12 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 50px 1fr 1fr 100px;
-    gap: 10px;
-    padding: 10px;
+    grid-gap: 10px;
 
     /* Misc */
     box-sizing: border-box;
     justify-content: center;
+    padding: 10px;
 }
 
 header,
@@ -38,8 +38,9 @@ footer {
 }
 
 header {
-    grid-column-start: 1;
-    grid-column-end: 5;
+    /* grid-column-start: 1;
+    grid-column-end: 5; */
+    grid-column: 1/5;
 }
 
 main {
